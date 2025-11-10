@@ -1,11 +1,8 @@
 pipeline {
     agent any
-    tools {
-        maven 'maven 3.9.9'
-    }
 
     environment {
-        SERVER_IP    = '<13.233.139.62>'
+        SERVER_IP    = '13.203.197.224'
         SSH_CRED_ID  = 'node-app-key'
         TOMCAT_PATH  = '/var/lib/tomcat10/webapps'
         TOMCAT_SVC   = 'tomcat10'
